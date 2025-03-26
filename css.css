@@ -1,26 +1,29 @@
+/* Estilos generales */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Estilos para el encabezado principal */
 .hero {
     background: url('imagenres/header.jpg') no-repeat center center/cover;
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
     height: 100vh;
-    color: #ffffff;
+    color: #080808;
     justify-content: center;
 }
 
 .hero h1 {
-    font-size: 35px;
+    font-size: 60px;
     max-width: 600px;
     margin: 0 auto;
     justify-content: center;
     display: flex;
-    padding: 200px;
+    padding: 100px;
 }
 
+/* Estilos para la sección de proyectos */
 .proyectos {
     text-align: center;
     padding: 20px;
@@ -32,12 +35,13 @@ body {
     gap: 10px;
     justify-items: center;
 }
- 
+
 .grid img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
+/* Estilos para la sección de feedback */
 .feedback {
     background-color: #4cafaf;
     text-align: center;
@@ -45,10 +49,12 @@ body {
     color: white;
 }
 
+/* Estilos para la sección de información */
 .info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
+    gap: 20px;
 }
 
 .mapa img {
@@ -56,9 +62,16 @@ body {
     max-width: 300px;
 }
 
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    max-width: 600px;
+}
+
+/* Estilos para el pie de página */
 footer {
-    background-color: #211f1f; /* Fondo gris */
-    color: white;
+    background-color: #211f1fa5; /* Fondo gris */
+    color: rgb(244, 238, 238);
     padding: 20px;
 }
 
@@ -75,14 +88,14 @@ footer {
 }
 
 .footer-bottom {
-    background: black;
-    color: white;
+    background: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Estilos responsivos */
+@media (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
